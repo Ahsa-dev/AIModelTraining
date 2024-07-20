@@ -1,0 +1,3 @@
+./credentials
+./trainingData/documents
+./trainingData/fine-tuning.jsonl
