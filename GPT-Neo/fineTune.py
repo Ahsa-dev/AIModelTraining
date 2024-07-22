@@ -15,22 +15,23 @@ def fine_tune_model(pdf_texts, model_name='EleutherAI/gpt-neo-125M'):
 
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
+
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
         
     # Tokenización
     def tokenize_batch(batch):
-        inputs = tokenizer(batch['text'][0]['text'], truncation=True, padding="max_length", max_length=12)
-        
+        inputs = tokenizer(batch['text'][0]['text'], truncation=True, padding=True, max_length=24)
         return inputs
 
     tokenized_datasets = dataset.map(tokenize_batch, batched=True)
 
     model = GPTNeoForCausalLM.from_pretrained(model_name)
-    
+
     data_collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer,
         mlm=False
     )
-
 
     training_args = TrainingArguments(
         output_dir='./results',
@@ -49,4 +50,7 @@ def fine_tune_model(pdf_texts, model_name='EleutherAI/gpt-neo-125M'):
 
     trainer.train()
 
-    return model, tokenizer
+    output_dir = './results'
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
+
