@@ -1,0 +1,58 @@
+[
+    {
+        "companyName": "Consorcio L184-Inédita",
+        "projectName": "Relevamiento de crecimiento demográfico y Encuesta de opinión pública en Perito Moreno",
+        "submissionDate": "2024-08-26",
+        "contactMail": "contacto@consorcioInedita.com",
+        "contactName": "Pepito Pérez"
+    },
+    {
+        "companyName": "EcoFuture",
+        "projectName": "Proyecto de desarrollo vial con visión al sostenimiento ambiental",
+        "submissionDate": "2024-08-25",
+        "contactMail": "contacto@ecofuture.com",
+        "contactName": "Juan Pérez"
+    },
+    {
+        "companyName": "EcoGreen",
+        "projectName": "Proyecto de desarrollo vial con visión al sostenimiento ambiental",
+        "submissionDate": "2024-08-26",
+        "contactMail": "info@ecogreen.org",
+        "contactName": "María Gómez"
+    },
+    {
+        "companyName": "EcoSystem",
+        "projectName": "Proyecto de restauración de acueducto en el centro de la ciudad",
+        "submissionDate": "2024-08-27",
+        "contactMail": "support@ecosystem.net",
+        "contactName": "Carlos Ruiz"
+    },
+    {
+        "companyName": "EnviroGuard",
+        "projectName": "Programa de protección y reforestación de áreas verdes",
+        "submissionDate": "2024-08-28",
+        "contactMail": "contact@enviroguard.com",
+        "contactName": "Ana López"
+    },
+    {
+        "companyName": "Green Energy",
+        "projectName": "Iniciativa de energía solar para comunidades rurales",
+        "submissionDate": "2024-08-29",
+        "contactMail": "info@greenenergy.org",
+        "contactName": "Luis Martínez"
+    },
+    {
+        "companyName": "Green Horizons",
+        "projectName": "Expansión de parques eólicos en la costa norte",
+        "submissionDate": "2024-08-30",
+        "contactMail": "admin@greenhorizons.com",
+        "contactName": "Sofía Fernández"
+    },
+    {
+        "companyName": "Nature Link",
+        "projectName": "Conservación y mantenimiento de reservas naturales",
+        "submissionDate": "2024-08-31",
+        "contactMail": "support@naturelink.org",
+        "contactName": "Daniela Vázquez"
+    }
+]
